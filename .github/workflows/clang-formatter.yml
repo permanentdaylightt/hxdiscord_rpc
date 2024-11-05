@@ -1,23 +1,35 @@
 name: Clang Formatter
-on: workflow_dispatch
+
+on:
+  workflow_dispatch:
+
 jobs:
   Job:
-    runs-on: ubuntu-24.04
+    runs-on: ubuntu-latest
+
     steps:
-      - name: Checkout
-        uses: actions/checkout@main
+      - name: Checkout repository
+        uses: actions/checkout@v4
 
       - name: Install clang-format
         run: sudo apt-get install clang-format -y
 
-      - name: Formatting files
-        run: find ./project/discord-rpc -name '*.c' -o -name '*.cpp' -o -name '*.m' -o -name '*.mm' -o -name '*.h' -o -name '*.hpp' | xargs clang-format -i
+      - name: Format files
+        run: |
+          find ./project/discord-rpc \
+            -name '*.c' -o \
+            -name '*.cpp' -o \
+            -name '*.m' -o \
+            -name '*.mm' -o \
+            -name '*.h' -o \
+            -name '*.hpp' | \
+          xargs clang-format -i
 
-      - name: Verify Formatting
+      - name: Verify formatting
         run: git status --short
 
-      - name: Upload Artifact
-        uses: actions/upload-artifact@main
+      - name: Upload artifact
+        uses: actions/upload-artifact@v4
         with:
           name: formattedFiles
           path: ./project/discord-rpc
