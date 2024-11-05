@@ -1,31 +1,36 @@
 # hxdiscord_rpc
 
-![](https://img.shields.io/github/repo-size/MAJigsaw77/hxdiscord_rpc) ![](https://badgen.net/github/open-issues/MAJigsaw77/hxdiscord_rpc) ![](https://badgen.net/badge/license/MIT/green)
+[![Repository Size](https://img.shields.io/github/repo-size/MAJigsaw77/hxdiscord_rpc)](https://github.com/MAJigsaw77/hxdiscord_rpc)  
+[![Open Issues](https://badgen.net/github/open-issues/MAJigsaw77/hxdiscord_rpc)](https://github.com/MAJigsaw77/hxdiscord_rpc/issues)  
+[![License](https://badgen.net/badge/license/MIT/green)](https://opensource.org/license/MIT)
 
-Haxe/hxcpp @:native bindings for [Discord RPC](https://github.com/discord/discord-rpc).
+Haxe/hxcpp `@:native` bindings for [Discord RPC](https://github.com/discord/discord-rpc).
 
-> [!NOTE]
-> These bindings are using a fork of Discord RPC, you can read more about it [here](https://github.com/MAJigsaw77/hxdiscord_rpc/tree/main/project/discord-rpc).
+> **Note**  
+> These bindings are based on a fork of Discord RPC. You can read more about it [here](https://github.com/MAJigsaw77/hxdiscord_rpc/tree/main/project/discord-rpc).
 
-### Installation
+## Installation
 
-You can install it through `Haxelib`
+You can install `hxdiscord_rpc` using Haxelib:
+
 ```bash
 haxelib install hxdiscord_rpc
 ```
-Or through `Git`, if you want the latest updates
+
+Alternatively, if you'd like to get the latest updates, install it directly from Git:
+
 ```bash
 haxelib git hxdiscord_rpc https://github.com/MAJigsaw77/hxdiscord_rpc.git
 ```
 
-### Usage Example
+## Usage Example
 
-Check out the [Sample Folder](sample/) for an example on how to use this library.
+For an example on how to use this library, check out the [Sample Folder](sample/).
 
-### Licensing
+## Licensing
 
-**hxdiscord_rpc** is made available under the **MIT License**. Check [LICENSE](./LICENSE) for more information.
+### **hxdiscord_rpc License**  
+This library is made available under the **MIT License**. See the [LICENSE](./LICENSE) file for more details.
 
-![](https://raw.githubusercontent.com/github/explore/2a3ce46f963399611d8e2054bb0ce9a4b539296a/topics/discord/discord.png)
-
-**Discord RPC** is made available under the **MIT License**. Check [Discord's RPC LICENSE](https://github.com/discord/discord-rpc/blob/master/LICENSE) for more information.
+### **Discord RPC License**  
+Discord RPC is also made available under the **MIT License**. See [Discord's RPC LICENSE](https://github.com/discord/discord-rpc/blob/master/LICENSE) for more details.
